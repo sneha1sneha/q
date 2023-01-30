@@ -1,0 +1,290 @@
+<!-- <!DOCTYPE html>   
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title > register Page </title>  
+</head>    
+<body>     -->
+
+    <!-- <h1>register Form </h1>  -->
+
+<!-- 
+    <div class="t">
+    <form  (ngSubmit)="register()" [formGroup]="registerForm" novalidate> 
+        <div class="container">    -->
+
+
+            <!-- <label>Username : </label>  <span *ngIf="username.length <= 0 && validationErr ">* Username required</span><br> 
+            <input type="text" placeholder="Enter Username" name="username" id="username" [(ngModel)]="username" required> 
+            
+            <label>Password : </label>    <span *ngIf="password.length <= 0 && validationErr "> *password required</span> 
+            <input type="password" placeholder="Enter Password" name="password" id="password" [(ngModel)]="password" required> 
+             -->
+            <!-- <label class="d-block my-3">
+              <input
+                type="text"
+                class="form-control"
+                formControlName="username"
+                autocomplete="username"
+                [placeholder]="'Username' | translate"
+              />
+              <span hidden translate>Username</span>
+              <small
+                [hidden]="registerForm.controls['username'].valid || registerForm.controls['username'].untouched"
+                class="text-danger"
+                translate
+              >
+                Username is required
+              </small>
+            </label>
+            <label class="d-block mb-3">
+              <input
+                type="password"
+                class="form-control"
+                formControlName="password"
+                autocomplete="current-password"
+                [placeholder]="'Password' | translate"
+                required
+              />
+              <span hidden translate>Password</span>
+              <small
+                [hidden]="registerForm.controls['password'].valid || registerForm.controls['password'].untouched"
+                class="text-danger"
+                translate
+              >
+                Password is required
+              </small>
+            </label>
+            <label class="d-block my-3">
+              <input
+                type="text"
+                class="form-control"
+                formControlName="email"
+                autocomplete="email"
+                [placeholder]="'email' | translate"
+              />
+              <span hidden translate>email</span>
+              <small
+                [hidden]="registerForm.controls['email'].valid || registerForm.controls['email'].untouched"
+                class="text-danger"
+                translate
+              >
+                email is required
+              </small>
+            </label>
+            <label class="d-block my-3">
+              <input
+                type="text"
+                class="form-control"
+                formControlName="firstname"
+                autocomplete="firstname"
+                [placeholder]="'firstname' | translate"
+              />
+              <span hidden translate>firstname</span>
+              <small
+                [hidden]="registerForm.controls['firstname'].valid || registerForm.controls['firstname'].untouched"
+                class="text-danger"
+                translate
+              >
+              firstname is required
+              </small>
+            </label>
+            <label class="d-block my-3">
+              <input
+                type="text"
+                class="form-control"
+                formControlName="lastname"
+                autocomplete="lastname"
+                [placeholder]="'lastname' | translate"
+              />
+              <span hidden translate>lastname</span>
+              <small
+                [hidden]="registerForm.controls['lastname'].valid || registerForm.controls['lastname'].untouched"
+                class="text-danger"
+                translate
+              >
+              lastname is required
+              </small>
+            </label>
+            
+              
+            <div class="m-3">
+              <button class="btn btn-primary w-100" type="submit" [disabled]="registerForm.invalid || isLoading">
+                <i class="fas fa-cog fa-spin" [hidden]="!isLoading"></i>
+                <span translate>Register</span>
+              </button>
+            </div>  -->
+             <!-- <button type="submit" (click)="loginn()">Login</button>    -->
+           <!-- <a routerLink="/registeration">Register Here</a> -->
+             <!-- <input type="checkbox" checked="checked"> Remember me    -->
+             <!-- <button type="button" class="cancelbtn"> Cancel</button>    -->
+            <!-- Forgot <a href="#"> password? </a>     -->
+        <!-- </div>   
+    </form> 
+    </div>    
+</body>     
+</html>    
+  -->
+
+
+
+
+
+
+
+
+
+
+  <section class="vh-100 bg-image"
+  style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');">
+  <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+          <div class="card" style="border-radius: 15px;">
+            <div class="card-body p-5">
+              <h2 class="text-uppercase text-center mb-5">Create an account</h2>
+
+              <form   (ngSubmit)="register()" [formGroup]="registerForm" novalidate>
+
+                <div class="form-outline mb-4">
+                  <input type="text"  id="form3Example1cg" class="form-control form-control-lg" 
+                  formControlName=" fisrtname"
+                  autocomplete="fisrtname"
+                  [placeholder]="' fisrtname' | translate"
+                />
+                <span hidden translate>FirstName</span>
+                <small
+                  [hidden]="registerForm.controls['fisrtname'].valid || registerForm.controls['fisrtname'].untouched"
+                  class="text-danger"
+                  translate
+                >
+                  fisrtname is required
+                </small>  
+                  <label class="form-label" for="form3Example1cg">First Name</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="email" id="form3Example3cg" class="form-control form-control-lg" 
+                  formControlName="lastname"
+                  autocomplete="lastname"
+                  [placeholder]="'lastname' | translate"
+                />
+                <span hidden translate>Username</span>
+                <small
+                  [hidden]="registerForm.controls['lastname'].valid || registerForm.controls['lastname'].untouched"
+                  class="text-danger"
+                  translate
+                >
+                  lastname is required
+                </small>  
+                  
+                  <label class="form-label" for="form3Example3cg">last name</label>
+                </div>
+               
+                <div class="form-outline mb-4">
+                    <input type="email" id="form3Example3cg" class="form-control form-control-lg"
+                    formControlName="email"
+                  autocomplete="email"
+                  [placeholder]="'email' | translate"
+                />
+                <span hidden translate>Username</span>
+                <small
+                  [hidden]="registerForm.controls['email'].valid || registerForm.controls['email'].untouched"
+                  class="text-danger"
+                  translate
+                >
+                email is required
+                </small>  
+                   
+                    <label class="form-label" for="form3Example3cg">Email</label>
+                  </div>
+
+                <div class="form-outline mb-4">
+                  <input type="password" id="form3Example4cg" class="form-control form-control-lg" 
+                  formControlName="username"
+                  autocomplete="username"
+                  [placeholder]="'Username' | translate"
+                />
+                <span hidden translate>Username</span>
+                <small
+                  [hidden]="registerForm.controls['username'].valid || registerForm.controls['username'].untouched"
+                  class="text-danger"
+                  translate
+                >
+                  Username is required
+                </small>  
+                  
+                  <label class="form-label" for="form3Example4cg">Password</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="password" id="form3Example4cdg" class="form-control form-control-lg"
+                  formControlName="username"
+                  autocomplete="username"
+                  [placeholder]="'Username' | translate"
+                />
+                <span hidden translate>Username</span>
+                <small
+                  [hidden]="registerForm.controls['username'].valid || registerForm.controls['username'].untouched"
+                  class="text-danger"
+                  translate
+                >
+                  Username is required
+                </small>  
+                  
+                  <label class="form-label" for="form3Example4cdg">Repeat your password</label>
+                </div>
+
+                <div class="form-check d-flex justify-content-center mb-5">
+                  <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
+                  <label class="form-check-label" for="form2Example3g">
+                    I agree all statements in <a href="#!" class="text-body"><u>Terms of service</u></a>
+                  </label>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                  <button type="button"
+                    class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>
+                </div>
+
+                <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="#!"
+                    class="fw-bold text-body"><u>Login here</u></a></p>
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
